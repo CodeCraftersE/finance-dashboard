@@ -123,8 +123,8 @@ export default function App() {
             <BarChart3 size={22} strokeWidth={2.5} />
           </div>
           <div>
-            <h1 className="text-xl font-black leading-none tracking-tight">Opal.io</h1>
-            <p className="text-[10px] font-bold text-zinc-400 mt-0.5 tracking-widest uppercase">Personal Wealth</p>
+            <h1 className="text-xl font-black leading-none tracking-tight">Finance Dashboard</h1>
+            <p className="text-[8px] font-bold text-zinc-400 mt-0.5 tracking-[0.2em] uppercase">a zoorvyn product</p>
           </div>
         </div>
 
@@ -173,11 +173,17 @@ export default function App() {
         <div className="mt-auto">
           <button 
             onClick={triggerExport}
-            className="w-full flex items-center justify-center gap-2 py-4 bg-zinc-50 dark:bg-zinc-900 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 text-zinc-500 hover:text-indigo-600 rounded-2xl transition-all text-xs font-black uppercase tracking-widest"
+            className="w-full flex items-center justify-center gap-2 py-4 bg-zinc-50 dark:bg-zinc-900 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 text-zinc-500 hover:text-indigo-600 rounded-2xl transition-all text-xs font-black uppercase tracking-widest mb-4"
           >
             <FileDown size={16} />
             Export Data
           </button>
+          
+          <div className="text-center">
+            <span className="text-[8px] font-bold text-zinc-300 dark:text-zinc-800 uppercase tracking-widest">
+              a zoorvyn product
+            </span>
+          </div>
         </div>
       </aside>
 
@@ -296,6 +302,12 @@ export default function App() {
               onFilterChange={setActiveFilter}
            />
         </div>
+
+        <footer className="mt-20 pt-8 border-t border-zinc-100 dark:border-zinc-900 text-center">
+            <p className="text-[10px] font-bold text-zinc-300 dark:text-zinc-800 uppercase tracking-[0.3em]">
+              a zoorvyn product
+            </p>
+        </footer>
       </main>
 
       {/* Data Entry Modal */}
